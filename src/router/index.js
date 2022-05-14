@@ -1,45 +1,48 @@
 import {createRouter, createWebHistory } from 'vue-router'
-import Dashboard from '../pages/Dashboard.vue'
-import Account from '../pages/Account.vue'
-import Reviews from '../pages/Reviews.vue'
-import Catalog from '../pages/Catalog.vue'
+import Profile from '../pages/Profile.vue'
+import Communities from '../pages/Communities.vue'
+import Messanger from '../pages/Messanger.vue'
+import Feed from '../pages/Feed.vue'
 
 
 const routes = [
-    {
-        name: 'Dashboard',
-        path: '/dashboard',
-        component: Dashboard,
-        meta: {
-            menu: 'user'
-        }
-    },
 
     {
-        name: 'Account',
-        path: '/account',
-        component: Account,
+        name: 'Profile',
+        path: '/profile',
+        component: Profile,
         meta: {
-            menu: ''
+            name: 'Профиль',
+            menu: 'main'
         }
     },
-    {
-        name: 'Reviews',
-        path: '/reviews',
-        component: Reviews,
+    {   
+        name: 'Messanger',
+        path: '/messanger',
+        component: Messanger,
         meta: {
+            name: 'Мессенджер',
             menu: 'main'
         }
     },
     {
-        name: 'Catalog',
-        path: '/catalog',
-        component: Catalog,
+        name: 'Communities',
+        path: '/communities',
+        component: Communities,
         meta: {
-            menu: 'user'
+            name: 'Сообщества',
+            menu: 'main'
         }
-    }
-
+    },
+    {
+        name: 'Feed',
+        path: '/feed',
+        component: Feed,
+        meta: {
+            name: 'Новости',
+            menu: 'main'
+        }
+    },
 ]
 
 const router = createRouter({
