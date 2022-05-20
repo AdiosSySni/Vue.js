@@ -6,6 +6,6 @@
     
 </template>
 
-<style lang="sass" scoped>
-
+<style scoped lang="sass" >
+   
 </style>

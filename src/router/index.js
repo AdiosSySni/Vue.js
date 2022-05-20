@@ -12,7 +12,7 @@ const routes = [
         path: '/profile',
         component: Profile,
         meta: {
-            name: 'Профиль',
+            name: 'Profile',
             menu: 'main'
         }
     },
@@ -21,7 +21,7 @@ const routes = [
         path: '/messanger',
         component: Messanger,
         meta: {
-            name: 'Мессенджер',
+            name: 'Network',
             menu: 'main'
         }
     },
@@ -30,7 +30,7 @@ const routes = [
         path: '/communities',
         component: Communities,
         meta: {
-            name: 'Сообщества',
+            name: 'Chat',
             menu: 'main'
         }
     },
@@ -39,7 +39,7 @@ const routes = [
         path: '/feed',
         component: Feed,
         meta: {
-            name: 'Новости',
+            name: 'Feed',
             menu: 'main'
         }
     },

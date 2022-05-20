@@ -1,14 +1,16 @@
 <script setup>
     import router from './router'
     import AsideNavbar from './components/Aside_navbar.vue'
+    
 </script>
 <template>
+
 
 <header class="header">
     <div class="container">
         <div class="header_content">
             <div class="logo">
-                <img src="" alt="">
+                <img src="../src/assets/images/Logo.svg" alt="#">
             </div>
 
             <div class="header_nav">
@@ -19,9 +21,10 @@
                     {{route.meta.name}}
                 </router-link>
             </div>
-
-            <input class="header_search" type="text" placeholder="Искать">
-
+            <form action="">
+                <input class="header_search" type="text" placeholder="Search">
+                <button class="search_btn"></button>
+            </form>
         </div>
     </div>
 </header>
@@ -61,55 +64,84 @@
         margin: 0 auto
 
     @font-face 
-        font-family: Arimo
-        src: url(@/assets/fonts/Arimo-Regular.woff2)
+        font-family: Gotham
+        src: url(@/assets/fonts/gothampro.woff2)
 
     @font-face 
-        font-family: EB Garamond
-        src: url(@/assets/fonts/EBGaramond-Medium.woff2)
+        font-family: Gotham_medium
+        src: url(@/assets/fonts/gothampro_medium.woff2)
     
     h1 
-        font-family:  EB Garamond
+        font-family:  Gotham_medium
         color: black
         font-size: 24px
+        line-height:17px
         font-weight: 500
-
-    input 
+        
+    a, input
+        font-family: Gotham_medium
+        text-decoration: none
+        color: black 
+        font-weight: 500
+        font-size: 16px
+        line-height: 12px
         outline: none
         border: none
 
-    p,a
-        font-family: Arimo 
-        text-decoration: none
+    p
+        font-family: Gotham
         color: black 
         font-weight: 400
+        font-size: 12px
 
     .logo 
-        background: brown
-        width: 40px
+        max-width: 130px
+        padding: 17px 40px 17px 44px
+
+    .logo img 
+        height: 46px
+
+    .header
+        background: white
            
     .header_content
         min-height: 80px
-        font-family: EB Garamond
         display: flex
         align-items: center
-        justify-content: space-between
 
-    .header_nav 
-        max-width: 500px
+    .header_nav
         display: flex
-        gap: 10px
-        padding: 0 10px
+        padding: 0 13px
 
     .header_nav a
         text-align: center
+        padding: 0 24px
 
-    
+    .header_search 
+        padding:33px 33px 33px 74px
+        // max-width: 367px
 
+    form 
+        position: relative
 
-    main .container 
+    .search_btn
+        position: absolute
+        top: 30px
+        left: 33px
+        border: none
+        background: none
+        cursor: pointer
+
+    .search_btn:before 
+        content: "\f002"
+        font-family: FontAwesome
+        font-size: 22px
+        font-weight: 400
+        color: #0275B1
+
+    .main .container 
         display: grid
-        grid-template-columns: 850px 290px
+        grid-template-columns: 1fr 0.35fr
         grid-template-rows: 400px 400px
         // grid-template-rows: minmax(400px 1000px) minmax(200px 500px)
         gap: 40px
