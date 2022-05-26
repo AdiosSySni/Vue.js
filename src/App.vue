@@ -31,10 +31,11 @@
 
     <main class="main">
         <div class="container">
-            <router-view />
-            <aside-navbar v-if="$route.name == 'Profile' || $route.name == 'Feed'"
-            
-            />
+            <div class="main_content">
+                <router-view />
+            </div>
+
+            <aside-navbar v-if="$route.name == 'Profile' || $route.name == 'Feed'"/>
         </div>
     </main>
 
@@ -53,10 +54,11 @@
     body 
         background: #F7F9FB
 
-    #app 
-        display: flex
-        flex-direction: column
-        gap: 40px
+    // #app 
+    //     display: flex
+    //     flex-direction: column
+    //     gap: 40px
+    //     text-transform: uppercase
 
     .container 
         padding:0 30px
@@ -74,9 +76,9 @@
     h1 
         font-family:  Gotham_medium
         color: black
-        font-size: 24px
+        font-size: 18px
         line-height:17px
-        font-weight: 500
+        font-weight: medium
         
     a, input
         font-family: Gotham_medium
@@ -93,6 +95,7 @@
         color: black 
         font-weight: 400
         font-size: 12px
+        line-height: 11px
 
     .logo 
         max-width: 130px
@@ -103,24 +106,19 @@
 
     .header
         background: white
-           
-    .header_content
-        min-height: 80px
-        display: flex
-        align-items: center
-
-    .header_nav
-        display: flex
-        padding: 0 13px
-
-    .header_nav a
-        text-align: center
-        padding: 0 24px
-
-    .header_search 
-        padding:33px 33px 33px 74px
-        // max-width: 367px
-
+        &_content
+            min-height: 80px
+            display: flex
+            align-items: center
+        &_nav
+            display: flex
+            padding: 0 13px
+        &_nav a
+            text-align: center
+            padding: 0 24px
+        &_search 
+            padding:33px 33px 33px 74px
+            // max-width: 367px
     form 
         position: relative
 
@@ -131,19 +129,21 @@
         border: none
         background: none
         cursor: pointer
-
-    .search_btn:before 
-        content: "\f002"
-        font-family: FontAwesome
-        font-size: 22px
-        font-weight: 400
-        color: #0275B1
+        &:before 
+            content: "\f002"
+            font-family: FontAwesome
+            font-size: 22px
+            font-weight: 400
+            color: #0275B1
 
     .main .container 
         display: grid
         grid-template-columns: 1fr 0.35fr
-        grid-template-rows: 400px 400px
+        grid-template-rows: 360px 360px
         // grid-template-rows: minmax(400px 1000px) minmax(200px 500px)
         gap: 40px
+        &_content
+            min-height: 100% 
+            margin-top: 39px
 
 </style>

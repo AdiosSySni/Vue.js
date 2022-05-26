@@ -12,6 +12,7 @@ const routes = [
         path: '/profile',
         component: Profile,
         meta: {
+            icon: '',
             name: 'Profile',
             menu: 'main'
         }
@@ -21,6 +22,7 @@ const routes = [
         path: '/messanger',
         component: Messanger,
         meta: {
+            icon: '',
             name: 'Network',
             menu: 'main'
         }
@@ -30,6 +32,7 @@ const routes = [
         path: '/communities',
         component: Communities,
         meta: {
+            icon: '',
             name: 'Chat',
             menu: 'main'
         }
@@ -39,6 +42,7 @@ const routes = [
         path: '/feed',
         component: Feed,
         meta: {
+            icon: '',
             name: 'Feed',
             menu: 'main'
         }
