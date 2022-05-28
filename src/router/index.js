@@ -6,7 +6,6 @@ import Feed from '../pages/Feed.vue'
 
 
 const routes = [
-
     {
         name: 'Profile',
         path: '/profile',

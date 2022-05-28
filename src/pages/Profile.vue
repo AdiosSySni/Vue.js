@@ -1,5 +1,5 @@
 <script setup>
-    // import AsideNavbar from '../components/Aside_navbar.vue'
+    
 </script>
 
 <template>
@@ -63,23 +63,167 @@
     <div class="profile_projects">
         <div class="projects_header">
             <h1>Projects</h1>
-            <div class="projects_count">
-                <p id="currentCount">3</p> <p>of</p> <p id="allCount">12</p>
+            <div class="projects_header_count">
+                <p id="currentCount">3 </p> <p> of</p> <p id="allCount"> 12</p>
+            </div>
+        </div>
+        <div class="projects_inner_wrapper">
+            <div class="projects_item">  
+                <img src="#" alt="Здесь будет картинка" class="projects_item_picture">
+                <div class="projects_item_description">
+                    <h2>Zara redesign concept</h2>
+                    <p>UX/UI design, 15.07.2019</p>
+                </div>
+            </div>
+
+            <div class="projects_item">  
+                <img src="#" alt="Здесь будет картинка" class="projects_item_picture">
+                <div class="projects_item_description">
+                    <h2>Zara redesign concept</h2>
+                    <p>UX/UI design, 15.07.2019</p>
+                </div>
+            </div>
+
+            <div class="projects_item">  
+                <img src="#" alt="Здесь будет картинка" class="projects_item_picture">
+                <div class="projects_item_description">
+                    <h2>Zara redesign concept</h2>
+                    <p>UX/UI design, 15.07.2019</p>
+                </div>
             </div>
         </div>
 
-        <div class="project_item">
-
-        </div>
-
-        <a href="#">show all</a>
+        <a href="#">show all (12)</a>
     </div>
+
+    <div class="profile_skills">
+        <h1 class="skills_header">
+            Skills & Endoresments
+        </h1>
+
+        <div class="skills_inner_wrapper">
+            <div class="skills_item">
+                <div class="skills_item_header">
+                    <p>User experience (UX)</p>
+                    <a href ="#" id="skills_item_count">6</a>
+                </div>
+
+                <div class="skills_item_users">
+
+                </div>
+            </div>
+
+            <div class="skills_item">
+                <div class="skills_item_header">
+                    <p>User experience (UX)</p>
+                    <a href ="#" id="skills_item_count">6</a>
+                </div>
+
+                <div class="skills_item_users">
+
+                </div>
+            </div>
+
+            <div class="skills_item">
+                <div class="skills_item_header">
+                    <p>User experience (UX)</p>
+                    <a href ="#" id="skills_item_count">6</a>
+                </div>
+
+                <div class="skills_item_users">
+
+                </div>
+            </div>
+        </div>
+        
+        <a href="#">show all (17)</a>
+    </div>
+
+    <div class="profile_experiance">
+        <h1>Experiance</h1>
+        
+            <div class="experiance_item first_item">
+                <div class="experiance_item_pic">
+
+                </div>
+                <div class="experiance_item_description">
+                    <h1>Freelance UX/UI designer</h1>
+                    <div class="experiance_item_info">
+                        <div class="item_info_line">
+                            <p>Self Employed</p>
+                            <p>Around the world</p>
+                        </div>
+                        <div class="item_info_line">
+                            <p>Jun 2016 — Present</p>
+                            <p><a href="#">3 yrs 3 mos</a></p>
+                        </div>
+                        
+                    </div>
+
+                    <p>Work with clients and web studios as freelancer.  Work in next areas: eCommerce web projects; creative landing pages; iOs and Android apps; corporate web sites and corporate identity sometimes.</p>
+                </div>
+            </div>
+
+            <div class="experiance_item ">
+                <div class="experiance_item_pic">
+                    
+                </div>
+                <div class="experiance_item_description">
+                    <h1>UX/UI designer</h1>
+                    <div class="experiance_item_info">
+                        <div class="item_info_line">
+                            <p>Upwork</p>
+                            <p>International</p>
+                        </div>
+                        <div class="item_info_line">
+                            <p>Jun 2019 — Present</p>
+                            <p><a href="#">3 mos</a></p>
+                        </div>
+                        
+                    </div>
+                    <p>New experience with Upwork system. Work in next areas: UX/UI design, graphic design, interaction design, UX research.</p>
+                </div>
+            </div>
+    </div>
+
+
+    <div class="profile_education">
+        <h1>Education</h1>
+        <div class="education_item">
+            <div class="education_item_pic">
+
+            </div>
+            <div class="education_item_description">
+                <h1>Moscow State Linguistic University</h1>
+                <div class="education_item_info">
+                    <p>Bachelor's degree Field Of StudyComputer and Information Systems Security/Information Assurance</p>
+                    <p>2013 — 2017</p>
+                </div>
+                <p>Additional English classes and UX profile courses.</p>
+            </div>
+        </div>
+    </div>
+
 </div>
+
 </template>
 
+<style lang="sass">
+@mixin flex-beetwen
+    display: flex
+    justify-content: space-between
+    
+@mixin block_stylization
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    padding: 0 30px
+    background: #FFFFFF
+    margin-top: 20px
 
+.aside_rightbar
+    height: 1165px
 
-<style scoped lang="sass">
 .profile
     min-height: 360px
     background: white
@@ -97,8 +241,7 @@
     &_tools
         max-width: 790px
         padding: 20px 30px 124px 30px
-        display: flex
-        justify-content: space-between
+        @include flex-beetwen
         button 
             background: white
     &_info
@@ -113,9 +256,9 @@
         border-radius: 50%
         background: gray
     &_header
-            display: flex
+            @include flex-beetwen
             align-items: center
-            justify-content: space-between
+            
     &_text
             margin-top: 15px
             max-width: 583px
@@ -161,9 +304,20 @@
             font-size: 14px
             line-height: 150%
             margin: 15px 0px 20px 0px
-    &_projects 
-        
-
+    &_projects
+        min-height: 355px
+        @include block_stylization
+        // gap: 25px
+        // padding: 30px 30px 31px 30px
+    &_skills
+        min-height: 220px
+        @include block_stylization
+    &_experiance
+        min-height: 345px
+        @include block_stylization
+    &_education
+        min-height: 195px
+        @include block_stylization
 .upload_btn 
     padding: 10px
     border: none
@@ -206,7 +360,101 @@
         background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%)
         border-radius: 4px 4px 0px 0px
 
+.projects
+    &_header
+        display: flex
+        gap: 15px
+        h1,p 
+            font-size: 18px
+            line-height: 17px
+        &_count
+            width: 58px
+            @include flex-beetwen
+    &_inner_wrapper
+        @include flex-beetwen
+        flex-flow: wrap
+       
+    &_item
+        // min-height: 216px
+        // min-width: 250px
+        @include flex-beetwen
+        flex-direction: column
+        h2 
+            font-size: 14px
+            line-height: 150%
+        &_picture
+            width: 250px
+            min-height: 160px
+        &_description
+            margin: 15px 0 0 0
+            min-height: 41px
+            @include flex-beetwen
+            flex-direction: column
+           
+.skills 
+    &_inner_wrapper
+        @include flex-beetwen
+        flex-flow: wrap    
+    &_item
+        padding: 14px 20px 16px 20px
+        &_header
+            width: 210px
+            @include flex-beetwen
+            p,a 
+                font-size: 14px
+                line-height: 150%
+        &_users
+            margin: 5px 0 0 0
+            background: gray
+            max-width: 99px
+            min-height: 24px
 
+.experiance
+    &_item
+        display: flex
+        p  
+            // font-size: 10px
+            line-height: 150%
+        h1 
+            font-size: 14px
+            line-height: 150%
+        &_pic
+            min-width: 54px
+            height: 54px
+            background: gray
+        &_description
+            margin: 0 0 0 16px
+        &_info
+            margin: 5px 0 10px 0
 
+.first_item 
+    border-bottom: 1px solid #F4F4F4
+    padding: 0 0 25px 0
 
+.item_info 
+    &_line
+        display: flex
+        margin-top: 5px
+        p:not(:first-child)
+            margin-left: 10px
+
+.education
+    &_item
+        display: flex
+        p  
+            // font-size: 10px
+            line-height: 150%
+        h1 
+            font-size: 14px
+            line-height: 150%
+        &_pic
+            min-width: 54px
+            height: 54px
+            background: gray
+        &_description
+                margin: 0 0 0 16px
+        &_info
+            margin: 5px 0 10px 0
+            p:not(:first-child)
+                margin-top: 5px
 </style>
