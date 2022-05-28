@@ -13,7 +13,16 @@
 
     <div class="posts">
         <div class="posts_item">
+            <div class="posts_item_status">
+                <div class="status_info"></div>
+                <div class="status_nav"></div>
+            </div>
+            <div class="posts_item_info">
+
+            </div>
+
             
+
         </div>
     </div>
 </template>

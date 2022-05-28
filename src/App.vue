@@ -1,11 +1,16 @@
 <script setup>
     import router from './router'
     import AsideNavbar from './components/Aside_navbar.vue'
-    // import { useCounterStore } from './store/userCounter'
-    // const store = useCounterStore();
+    import {userFetch} from './store/index'
+    import {userStore} from './store/store'
 
-    
-    
+    const {person} = userStore();
+ 
+    const storeFetch = userFetch();
+    storeFetch.fetchGetUsers() 
+    storeFetch.fetchPostUsers()
+    storeFetch.fetchPatchUsers()
+    console.log(storeFetch.getUsers())
 </script>
 <template>
 
@@ -94,8 +99,6 @@
 </template>
 
 <style lang="sass">
-    
-
     @font-face 
         font-family: Gotham
         src: url(@/assets/fonts/gothampro.woff2)
