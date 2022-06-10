@@ -1,460 +1,368 @@
 <script setup>
-    
+
 </script>
-
 <template>
-<!-- profile -->
-<div class="profile_content">
-        <div class="profile">
-            <div class="profile_background">
-                <div class="profile_tools">
-                    <button class="upload_btn "></button>
-                    <button class="edit_btn"><p>edit profile</p></button>
-                </div>
+    <div class="profile">
+      <div class="profile_info">
+        <div class="info_background">
+          <div class="info_edit_bar">
+            <a href="#"><img src="../assets/images/img_profile/upload.png" alt="upload"></a>
+            <a href="#"><img src="../assets/images/img_profile/edit.png" alt="edit"> EDIT PROFILE</a>
+          </div>
+        </div>
+        <div class="info_context">
+          <div class="info_avatar">
+
+          </div>
+          <div class="info_text">
+            <div class="info_text_header">
+              <div class="info_text_header_left">
+                <h1>Dmitry Kargaev</h1>
+                <a href="#"><img src="../assets/images/img_profile/Logo.png" alt="logo"></a> 
+              </div>
+              <div class="info_text_header_right">
+                <a href="#"><img src="../assets/images/img_profile/navigation.png" alt="nav"></a>
+                <p>Saint Petersburg, Russian Federation</p>
+              </div>
+            </div>
+            <p>Freelance UX/UI designer, 80+ projects in web design, mobile apps  (iOS & android) and creative projects. Open to offers.</p>
+            <div class="info_buttons">
+              <button>Contact info</button>
+              <button>1,043 connections</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile_nav">
+        <ul>
+          <li class="activelink">Profile</li>
+          <li>Activity & interests</li>
+          <li>Articles (3)</li>
+        </ul>
+      </div>
+
+      <div class="profile_about">
+          <h1>About</h1>
+          <p>I'm more experienced in eCommerce web projects and mobile banking apps, but also like to work with creative projects, such as landing pages or unusual corporate websites. </p>
+          <a href="#">See more</a>
+      </div>
+
+      <div class="profile_projects">
+        <div class="profile_projects_header">
+          <h1>Projects</h1>
+          <p><a href="#">3</a> of <a href="#">12</a></p>
+        </div>
+        <div class="profile_projects_items">
+          <div class="profile_projects_item">
+            <img src="../assets/images/img_profile/ext.png" alt="ext.png">
+            <h2>Zara redesign concept</h2>
+            <p>UX/UI design, 15.07.2019</p>
+          </div>
+
+           <div class="profile_projects_item">
+            <img src="../assets/images/img_profile/ext.png" alt="ext.png">
+            <h2>Zara redesign concept</h2>
+            <p>UX/UI design, 15.07.2019</p>
+          </div>
+
+           <div class="profile_projects_item">
+            <img src="../assets/images/img_profile/ext.png" alt="ext.png">
+            <h2>Zara redesign concept</h2>
+            <p>UX/UI design, 15.07.2019</p>
+          </div>
+        </div>
+        <a href="#" class="show_all">Show all <p>(12)</p></a> 
+      </div>
+
+      <div class="profile_skills">
+        <h1>Skills & Endoresments</h1>
+        <div class="profile_skills_items">
+          <div class="profile_skills_item">
+            <div class="profile_skills_item_header">
+              <h2>User experience (UX)</h2>
+              <a href="#" id="count">6</a>
             </div>
 
-            <div class="profile_info">
-                <div class="profile_img">
-
-                </div>
-
-                <div class="profile_description">
-                    <div class="profile_header">
-                        <h>Dmitry Kargaev</h>
-
-                        <p class="location">
-                            Saint Petersburg, Russian Federation</p>
-                    </div>
-
-                    
-                    <p class="profile_text">
-                        Freelance UX/UI designer, 80+ projects in web design, mobile apps  (iOS & android) and creative projects. Open to offers.
-                    </p>
-                    
-                    <div class="profile_btn">
-                        <button class="profile_contact">Contact info</button>
-                        <div class="profile_connections">1,043 connections</div>
-                    </div>
-                </div>
+            <div class="profile_skills_item_people">
+              
             </div>
+          </div>
+
+          <div class="profile_skills_item">
+            <div class="profile_skills_item_header">
+              <h2>User experience (UX)</h2>
+              <a href="#" id="count">6</a>
+            </div>
+
+            <div class="profile_skills_item_people">
+              
+            </div>
+          </div>
+
+          <div class="profile_skills_item">
+            <div class="profile_skills_item_header">
+              <h2>User experience (UX)</h2>
+              <a href="#" id="count">6</a>
+            </div>
+
+            <div class="profile_skills_item_people">
+              
+            </div>
+          </div>
+        </div>
+        <a href="#" class="show_all">Show ALL <p>(17)</p></a>
+      </div>
+
+      <div class="profile_experiance">
+        <h1>Experience</h1>
+        <div class="profile_experiance_item">
+          <img src="../assets/images/img_profile/Group.png" alt="img">
+          <div class="profile_experiance_content">
+            <h2>Freelance UX/UI designer</h2>
+            <div class="profile_experiance_description">
+              <p>Self Employed</p>
+              <p>Around the world</p>
+            </div>
+            <div class="profile_experiance_description">
+              <p>Jun 2016 — Present</p>
+              <p>3 yrs 3 mos</p>
+            </div>
+            <p>Work with clients and web studios as freelancer.  Work in next areas: eCommerce web projects; creative landing pages; iOs and Android apps; corporate web sites and corporate identity sometimes.</p>
+          </div>
         </div>
 
-    <!-- tabs -->
-    <div class="profile_tabs">
-        <button class="tab_link">
-            <p>profile</p>
-        </button>
-        
-       <button class="tab_link">
-            <p>Activity & interests</p>
-        </button>
-
-        <button class="tab_link">
-            <p>Articles (3)</p>
-        </button>
-    </div>
-    <!-- profile_about -->
-    <div class="profile_about">
-        <h1>About</h1>
-        <p>I'm more experienced in eCommerce web projects and mobile banking apps, but also like to work with creative projects, such as landing pages or unusual corporate websites. </p>
-        <a href="#">see more</a>
-    </div>
-
-    <div class="profile_projects">
-        <div class="projects_header">
-            <h1>Projects</h1>
-            <div class="projects_header_count">
-                <p id="currentCount">3 </p> <p> of</p> <p id="allCount"> 12</p>
+        <div class="profile_experiance_item">
+          <img src="../assets/images/img_profile/Group2png.png" alt="img">
+          <div class="profile_experiance_content">
+            <h2>UX/UI designer</h2>
+            <div class="profile_experiance_description">
+              <p>Self Employed</p>
+              <p>Around the world</p>
             </div>
+            <div class="profile_experiance_description">
+              <p>Jun 2016 — Present</p>
+              <p>3 yrs 3 mos</p>
+            </div>
+            <p>New experience with Upwork system. Work in next areas: UX/UI design, graphic design, interaction design, UX research.</p>
+          </div>
         </div>
-        <div class="projects_inner_wrapper">
-            <div class="projects_item">  
-                <img src="#" alt="Здесь будет картинка" class="projects_item_picture">
-                <div class="projects_item_description">
-                    <h2>Zara redesign concept</h2>
-                    <p>UX/UI design, 15.07.2019</p>
-                </div>
-            </div>
+      </div>
 
-            <div class="projects_item">  
-                <img src="#" alt="Здесь будет картинка" class="projects_item_picture">
-                <div class="projects_item_description">
-                    <h2>Zara redesign concept</h2>
-                    <p>UX/UI design, 15.07.2019</p>
-                </div>
-            </div>
-
-            <div class="projects_item">  
-                <img src="#" alt="Здесь будет картинка" class="projects_item_picture">
-                <div class="projects_item_description">
-                    <h2>Zara redesign concept</h2>
-                    <p>UX/UI design, 15.07.2019</p>
-                </div>
-            </div>
-        </div>
-
-        <a href="#">show all (12)</a>
-    </div>
-
-    <div class="profile_skills">
-        <h1 class="skills_header">
-            Skills & Endoresments
-        </h1>
-
-        <div class="skills_inner_wrapper">
-            <div class="skills_item">
-                <div class="skills_item_header">
-                    <p>User experience (UX)</p>
-                    <a href ="#" id="skills_item_count">6</a>
-                </div>
-
-                <div class="skills_item_users">
-
-                </div>
-            </div>
-
-            <div class="skills_item">
-                <div class="skills_item_header">
-                    <p>User experience (UX)</p>
-                    <a href ="#" id="skills_item_count">6</a>
-                </div>
-
-                <div class="skills_item_users">
-
-                </div>
-            </div>
-
-            <div class="skills_item">
-                <div class="skills_item_header">
-                    <p>User experience (UX)</p>
-                    <a href ="#" id="skills_item_count">6</a>
-                </div>
-
-                <div class="skills_item_users">
-
-                </div>
-            </div>
-        </div>
-        
-        <a href="#">show all (17)</a>
-    </div>
-
-    <div class="profile_experiance">
-        <h1>Experiance</h1>
-        
-            <div class="experiance_item first_item">
-                <div class="experiance_item_pic">
-
-                </div>
-                <div class="experiance_item_description">
-                    <h1>Freelance UX/UI designer</h1>
-                    <div class="experiance_item_info">
-                        <div class="item_info_line">
-                            <p>Self Employed</p>
-                            <p>Around the world</p>
-                        </div>
-                        <div class="item_info_line">
-                            <p>Jun 2016 — Present</p>
-                            <p><a href="#">3 yrs 3 mos</a></p>
-                        </div>
-                        
-                    </div>
-
-                    <p>Work with clients and web studios as freelancer.  Work in next areas: eCommerce web projects; creative landing pages; iOs and Android apps; corporate web sites and corporate identity sometimes.</p>
-                </div>
-            </div>
-
-            <div class="experiance_item ">
-                <div class="experiance_item_pic">
-                    
-                </div>
-                <div class="experiance_item_description">
-                    <h1>UX/UI designer</h1>
-                    <div class="experiance_item_info">
-                        <div class="item_info_line">
-                            <p>Upwork</p>
-                            <p>International</p>
-                        </div>
-                        <div class="item_info_line">
-                            <p>Jun 2019 — Present</p>
-                            <p><a href="#">3 mos</a></p>
-                        </div>
-                        
-                    </div>
-                    <p>New experience with Upwork system. Work in next areas: UX/UI design, graphic design, interaction design, UX research.</p>
-                </div>
-            </div>
-    </div>
-
-
-    <div class="profile_education">
+      <div class="profile_education">
         <h1>Education</h1>
-        <div class="education_item">
-            <div class="education_item_pic">
-
-            </div>
-            <div class="education_item_description">
-                <h1>Moscow State Linguistic University</h1>
-                <div class="education_item_info">
-                    <p>Bachelor's degree Field Of StudyComputer and Information Systems Security/Information Assurance</p>
-                    <p>2013 — 2017</p>
-                </div>
-                <p>Additional English classes and UX profile courses.</p>
-            </div>
+        <div class="profile_education_item">
+          <img src="../assets/images/img_profile/Group3.png" alt="img">
+          <div class="profile_education_content">
+            <h2>Moscow State Linguistic University</h2>
+            <p>Bachelor's degree Field Of StudyComputer and Information Systems Security/Information Assurance</p>
+            <p>2013 — 2017</p>
+            <p>Additional English classes and UX profile courses​.</p>
+          </div>
+          
         </div>
+      </div>
     </div>
-
-</div>
-
+    <aside class="asideNavRight"></aside>
 </template>
 
 <style lang="sass">
-@mixin flex-beetwen
+@import '../assets/sass/style'
+@mixin flex_block
+  display: flex
+  flex-direction: column
+  justify-content: space-evenly
+  padding: 0 30px
+  background: $white
+  margin-top: 20px
+  box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5)
+  border-radius: 4px
+p 
+  font-size: 14px
+  font-height: 150%
+.show_all 
+    display: flex
+    font-size: 12px
+    line-height: 11px
+    text-transform: uppercase
+    color: $secondaryColor 
+button 
+  border: 1px solid $secondaryColor
+  border-radius: 4px
+  background: none
+  color: $secondaryColor
+  transition: 0.42s
+  font-family: $fontMediumMain
+button:hover 
+    color: $white
+    background: $secondaryColor
+.profile
+  display: grid
+  grid-auto-columns: 1fr
+  grid-template-rows: 360px 50px 170px minmax(355px,100%) 220px 345px 195px
+  &_info
+    background: $white
+    margin-bottom: 20px
+  &_nav
+    border-bottom: 1px solid $thirdColor
+    ul
+      display: grid
+      grid-template-columns: repeat(3, 240px)
+      height: 100%
+      align-items: end
+      li
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 80%
+        border: 1px solid $thirdColor
+        border-radius: 4px
+        background: none
+        transition: 0.42s
+        font-family: $fontMediumMain
+        text-transform: uppercase
+        cursor: pointer
+      .activelink
+        color: $white
+        height: 100%
+        background: $secondaryColor
+  &_about 
+    @include flex_block
+    a 
+      font-size: 12px
+      line-height: 11px
+      text-transform: uppercase
+      color: $secondaryColor 
+  &_projects 
+    @include flex_block
+    &_header
+      display: flex
+      p
+        margin-left: 15px
+        font-size: 18px 
+        line-height: 17px 
+        color: #747474
+        display: flex
+        width: 58px
+        justify-content: space-between
+        a
+          font-size: 18px
+          line-height: 17px
+          color: #747474
+    &_items
+      display: flex
+      justify-content: space-between
+      flex-flow: wrap
+    &_item
+      width: 100%
+      max-width: 250px
+      min-height: 216px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+  &_skills
+    @include flex_block
+    &_items
+      display: flex
+      justify-content: space-between
+      flex-flow: wrap
+    &_item
+      width: 100%
+      max-width: 250px
+      min-height: 80px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      padding: 14px 20px 16px 20px
+      border: 1px solid #F4F4F4
+      border-radius: 6px
+      &_header
+        display: flex
+        justify-content: space-between
+      &_people
+        width: 100px
+        height: 24px
+        background: gray
+  &_experiance
+    @include flex_block
+    &_item
+      display: grid
+      grid-template-columns: 54px 91% 
+      justify-content: space-between
+    &_content
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      min-height: 100px
+    &_description
+      width: 170px
+      height: 16px
+      display: flex
+      justify-content: space-between
+      p 
+        font-size: 10px
+        line-height: 150%
+  &_education
+    @include flex_block
+    &_item
+      display: grid
+      grid-template-columns: 54px 91% 
+      justify-content: space-between
+    &_content
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      min-height: 100px
+// блок с описанием профиля
+.info
+  &_background
+    height: 180px
+    background-image: url(../assets/images/img_profile/background.png)
+  &_edit_bar
     display: flex
     justify-content: space-between
-    
-@mixin block_stylization
+    padding: 20px 30px 124px 40px
+    a 
+      padding: 10px 10px
+      background: $white
+      display: flex
+      align-items: center
+  &_context
+    display: flex
+    justify-content: space-between
+    padding: 0 30px
+  &_avatar
+    bottom: 40px
+    position: relative
+    width: 170px
+    height: 170px
+    border-radius: 50%
+    border: 10px solid $white
+    background: gray
+  &_text
+    width: 600px
     display: flex
     flex-direction: column
     justify-content: space-evenly
-    padding: 0 30px
-    background: #FFFFFF
-    margin-top: 20px
-
-.aside_rightbar
-    height: 1165px
-
-.profile
-    min-height: 360px
-    background: white
-    &_content 
-        min-height: 100%
-        a 
-            font-size: 12px
-            line-height: 11px
-            text-transform: uppercase
-            color: #0275B1
-    &_background 
-        min-height: 180px
-        background: url('../assets/images/profile_pic.jpg') center
-        background-size: cover
-    &_tools
-        max-width: 790px
-        padding: 20px 30px 124px 30px
-        @include flex-beetwen
-        button 
-            background: white
-    &_info
-        display: flex
-        position: relative
-        bottom: 30px
-    &_description
-        padding: 44px 30px 0px 22px
-    &_img
-        min-width: 170px
-        height: 170px
-        border-radius: 50%
-        background: gray
     &_header
-            @include flex-beetwen
-            align-items: center
-            
-    &_text
-            margin-top: 15px
-            max-width: 583px
-            font-size: 14px
-            line-height: 150%
-    &_btn
-            display: flex
-            margin-top: 14px
-    &_contact
-            background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%)
-            padding: 11px 37px 10px 37px
-            border-radius: 4px
-            border: none
-            color: white
-            line-height: 11px
-            font-size: 12px
-            text-transform: uppercase
-            cursor: pointer
-    &_connections
-            margin: 0 0 0 15px
-            padding: 11px 20px 10px 20px
-            color: #0275B1
-            border: none
-            background: #FFFFFF
-            border: 1px solid #0275B1
-            border-radius: 4px
-            line-height: 11px
-            font-size: 12px
-            font-weight: bold
-            text-transform: uppercase
-            cursor: pointer
-    &_tabs 
-            display: flex
-            align-items: end
-            min-height: 50px
-            margin-top: 31px
-            border-bottom: 1px solid #E7E7E7
-    &_about
-        margin-top: 30px
-        padding: 30px 30px 35px 30px
-        background: white
-        p 
-            font-size: 14px
-            line-height: 150%
-            margin: 15px 0px 20px 0px
-    &_projects
-        min-height: 355px
-        @include block_stylization
-        // gap: 25px
-        // padding: 30px 30px 31px 30px
-    &_skills
-        min-height: 220px
-        @include block_stylization
-    &_experiance
-        min-height: 345px
-        @include block_stylization
-    &_education
-        min-height: 195px
-        @include block_stylization
-.upload_btn 
-    padding: 10px
-    border: none
-    cursor: pointer
-    &:before
-        content: '\f093'
-        font-family: FontAwesome
-        font-size: 16px
-
-.edit_btn
-    text-transform: uppercase
-    border-radius: 4px
-    border: none
-    padding: 10px 10px
+      display: flex
+      justify-content: space-between
+      &_left
+        display: flex   
+        a
+          margin-left: 10px   
+      &_right
+        display: flex
+        p
+          margin-left: 10px
+  &_buttons
     display: flex
-    align-items: center
-    cursor: pointer
-    p 
-        margin-left: 8px
-    &:before 
-        content: '\f044'
-        font-family: FontAwesome
-        font-size: 16px
+    button
+      padding: 11px 37px
 
-.tab_link
-    max-height: 40px 
-    text-align: center
-    padding: 15px 0px 14px 0px
-    width: 240px
-    background: #FFFFFF
-    border: 1px solid #E7E7E7
-    border-radius: 0px 4px 0px 0px
-    cursor: pointer
-    p
-        font-weight: bold
-        text-transform: uppercase
-    &:hover 
-        max-height: 50px
-        padding: 21px 0px 18px 0px
-        background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%)
-        border-radius: 4px 4px 0px 0px
+    button:not(:first-child)
+      margin-left: 15px
+// навигационный блок страницы профиля
 
-.projects
-    &_header
-        display: flex
-        gap: 15px
-        h1,p 
-            font-size: 18px
-            line-height: 17px
-        &_count
-            width: 58px
-            @include flex-beetwen
-    &_inner_wrapper
-        @include flex-beetwen
-        flex-flow: wrap
-       
-    &_item
-        // min-height: 216px
-        // min-width: 250px
-        @include flex-beetwen
-        flex-direction: column
-        h2 
-            font-size: 14px
-            line-height: 150%
-        &_picture
-            width: 250px
-            min-height: 160px
-        &_description
-            margin: 15px 0 0 0
-            min-height: 41px
-            @include flex-beetwen
-            flex-direction: column
-           
-.skills 
-    &_inner_wrapper
-        @include flex-beetwen
-        flex-flow: wrap    
-    &_item
-        padding: 14px 20px 16px 20px
-        &_header
-            width: 210px
-            @include flex-beetwen
-            p,a 
-                font-size: 14px
-                line-height: 150%
-        &_users
-            margin: 5px 0 0 0
-            background: gray
-            max-width: 99px
-            min-height: 24px
 
-.experiance
-    &_item
-        display: flex
-        p  
-            // font-size: 10px
-            line-height: 150%
-        h1 
-            font-size: 14px
-            line-height: 150%
-        &_pic
-            min-width: 54px
-            height: 54px
-            background: gray
-        &_description
-            margin: 0 0 0 16px
-        &_info
-            margin: 5px 0 10px 0
-
-.first_item 
-    border-bottom: 1px solid #F4F4F4
-    padding: 0 0 25px 0
-
-.item_info 
-    &_line
-        display: flex
-        margin-top: 5px
-        p:not(:first-child)
-            margin-left: 10px
-
-.education
-    &_item
-        display: flex
-        p  
-            // font-size: 10px
-            line-height: 150%
-        h1 
-            font-size: 14px
-            line-height: 150%
-        &_pic
-            min-width: 54px
-            height: 54px
-            background: gray
-        &_description
-                margin: 0 0 0 16px
-        &_info
-            margin: 5px 0 10px 0
-            p:not(:first-child)
-                margin-top: 5px
 </style>
