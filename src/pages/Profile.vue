@@ -250,29 +250,25 @@ button:hover
           line-height: 17px
           color: #747474
     &_items
-      display: flex
-      justify-content: space-between
+      @include flex_beetwen
       flex-flow: wrap
     &_item
       width: 100%
       max-width: 250px
       min-height: 216px
-      display: flex
+      @include flex_beetwen
       flex-direction: column
-      justify-content: space-between
   &_skills
     @include flex_block
     &_items
-      display: flex
-      justify-content: space-between
+      @include flex_beetwen
       flex-flow: wrap
     &_item
       width: 100%
       max-width: 250px
       min-height: 80px
-      display: flex
+      @include flex_beetwen
       flex-direction: column
-      justify-content: space-between
       padding: 14px 20px 16px 20px
       border: 1px solid #F4F4F4
       border-radius: 6px
@@ -290,15 +286,13 @@ button:hover
       grid-template-columns: 54px 91% 
       justify-content: space-between
     &_content
-      display: flex
+      @include flex_beetwen
       flex-direction: column
-      justify-content: space-between
       min-height: 100px
     &_description
       width: 170px
       height: 16px
-      display: flex
-      justify-content: space-between
+      @include flex_beetwen
       p 
         font-size: 10px
         line-height: 150%
@@ -309,9 +303,8 @@ button:hover
       grid-template-columns: 54px 91% 
       justify-content: space-between
     &_content
-      display: flex
+      @include flex_beetwen
       flex-direction: column
-      justify-content: space-between
       min-height: 100px
 // блок с описанием профиля
 .info
@@ -319,8 +312,7 @@ button:hover
     height: 180px
     background-image: url(../assets/images/img_profile/background.png)
   &_edit_bar
-    display: flex
-    justify-content: space-between
+    @include flex_beetwen
     padding: 20px 30px 124px 40px
     a 
       padding: 10px 10px
@@ -328,8 +320,7 @@ button:hover
       display: flex
       align-items: center
   &_context
-    display: flex
-    justify-content: space-between
+    @include flex_beetwen
     padding: 0 30px
   &_avatar
     bottom: 40px
@@ -345,8 +336,7 @@ button:hover
     flex-direction: column
     justify-content: space-evenly
     &_header
-      display: flex
-      justify-content: space-between
+      @include flex_beetwen
       &_left
         display: flex   
         a

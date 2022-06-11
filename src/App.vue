@@ -1,8 +1,11 @@
 <script setup>
     import VHeader from './components/_header.vue' // <v-header/>
     import VFooter from './components/_footer.vue' // <v-footer/>
-    // import VAsidenavbar from './components/_aside_navbar.vue' //<v-asidenavbar/>
     import VModal from './components/_modal.vue' // <v-modal/>
+    import {userFetch} from './api/api'
+    const fetch = userFetch();
+    fetch.fetchGetUsers()  
+    fetch.fetchPostUsers()
 </script>
 <template>
     <v-header/>
@@ -26,7 +29,4 @@
     display: grid
     justify-content: space-between
     grid-template-columns: 72% 25%
-
-
-        
 </style>

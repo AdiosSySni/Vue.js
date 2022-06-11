@@ -1,18 +1,23 @@
 <script setup>
-    
+    import VPost from '../components/_post.vue'
+    import {userFetch} from '../api/api'
+    const fetch = userFetch();
+    const users = fetch.getUsers()
+
 </script>
 <template>
     <div class="feed">
       <div class="feed_newpost">
           <h2>NEW POST</h2>
-          <div class="feed_post_input">
+          <div class="feed_newpost_input">
               <input type="text" value="What’s on your mind?">
-              <a href="#"><img src="../assets/images/img_feed/send.png" alt="img"></a>
+              <a @click="fetch.fetchPostUsers()" href="#"><img src="../assets/images/img_feed/send.png" alt="img"></a>
           </div>
       </div>
 
-      <div class="feed_post">
-          <div class="feed_post_header">
+      <v-post v-for="user in users" :user="user"/>
+      <!-- <div class="feed_post">
+          <div class="feed_post_header">    
               <p>Ted Bell, Annette Nguyen and Cody Hawkins liked this</p>
               <img src="../assets/images/img_feed/more-horizontal.png" alt="dots">
           </div>
@@ -41,9 +46,11 @@
               </div>
               <a href="#"><img src="../assets/images/img_feed/share-2.png" alt="share"> SHARE</a>
           </div>
-      </div>
+      </div> -->
 
-      <div class="feed_post">
+      <!-- <v-post/> -->
+
+      <!-- <div class="feed_post">
           <div class="feed_post_header">
               <p>Ted Bell, Annette Nguyen and Cody Hawkins liked this</p>
               <img src="../assets/images/img_feed/more-horizontal.png" alt="dots">
@@ -139,7 +146,7 @@
               </div>
               <a href="#"><img src="../assets/images/img_feed/share-2.png" alt="share"> SHARE</a>
           </div>
-      </div>
+      </div> -->
       
       
     </div>
@@ -167,10 +174,11 @@
     background: $white
 .feed
   display: grid
-  grid-auto-columns: 1fr
-  grid-template-rows: 135px 285px 532px 402px 260px
   &_newpost
-    @include flex_block
+    display: flex
+    flex-direction: column
+    padding: 25px 30px
+    gap: 40px
     @include content_block
     background: $white
     &_input
@@ -187,50 +195,4 @@
         padding: 10px 10px
         background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%)
         border-radius: 4px
-  &_post
-    @include content_block
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    &_header
-      display: flex
-      justify-content: space-between
-      align-items: center
-      border-bottom:1px solid $thirdColor
-      height: 45px
-      padding: 0 15px
-    &_content
-      height: 100%
-      @include flex_block
-      &_main
-        display: flex
-        flex-direction: column
-        gap: 15px
-      &_author
-        display: grid
-        grid-template-columns: 52px 200px
-    &_footer
-      display: flex
-      justify-content: space-between
-      height: 50px
-      border-top:1px solid $thirdColor
-      &_right
-        display: flex
-      a 
-        padding: 15px 30px 18px 30px
-        display: flex
-        gap: 6px
-        align-items: center
-      a:not(last-child)
-        border-right: 1px solid $thirdColor
-      a:last-child
-        border-left: 1px solid $thirdColor
-
-
-.description
-  display: flex
-  flex-direction: column
-  justify-content: space-evenly
-  margin-left: 15px
-  
 </style>
