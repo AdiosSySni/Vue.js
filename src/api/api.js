@@ -1,12 +1,9 @@
 import { computed, reactive, ref, toRefs} from "vue"
 
-let users = reactive([])
+const users = reactive([])
 
 function addUsers(user) {
     users.push(user)
-    // if(user.id == 1) {
-    //     console.log(user.name)
-    // }
 }
 
 function getUsers() {
@@ -63,6 +60,6 @@ export function userFetch() {
         fetchGetUsers,
         fetchPostUsers,
         fetchPatchUsers,
-        users
+        users   
     }
 }

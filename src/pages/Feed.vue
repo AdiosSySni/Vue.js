@@ -3,7 +3,6 @@
     import {userFetch} from '../api/api'
     const fetch = userFetch();
     const users = fetch.getUsers()
-
 </script>
 <template>
     <div class="feed">
