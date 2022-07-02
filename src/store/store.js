@@ -1,4 +1,72 @@
-// import { computed, reactive, toRefs, watch } from 'vue'
+import { computed, reactive, toRefs, watch } from 'vue'
+import {defineStore} from 'pinia'
+
+export const useUserInfo = defineStore('settings', {
+  state: () => {
+    return {
+      userId: null,
+      name: null
+    }
+  },
+
+  getters: {
+    getUser: (state) => state
+  },
+
+  actions: {
+    async setUserInfo() {
+      const userData = await fetch(`https://jsonplaceholder.typicode.com/users/2`)
+      .then(response => response.json())
+      .then((data => pushUserInfo(data))) 
+      .catch(error => console.log(error))
+      .finally(() => {console.log('end') })
+      return userData
+    },
+  }
+})
+
+function pushUserInfo(data) {
+  console.log(data)
+  useUserInfo().userId = data.id
+  useUserInfo().name = data.name
+}
+
+
+
+// export const useUserInfo = defineStore('settings', {
+//   state: () => {
+//     return {
+//       userId: null,
+//       name: null
+//     }
+//   },
+
+//   getters: {
+//     // getUser(state) {
+//     //   return state
+//     // }
+//   },
+
+//   actions: {
+//     fetchUserInfo() {
+//       fetch(`https://jsonplaceholder.typicode.com/users/2  `)
+//        .then(response => response.json())
+//        .then((data) =>  {
+       
+//        }) 
+//        .catch(error => console.log(error))
+//        .finally(() => {console.log('end') })
+//     },
+
+//     pushUserInfo(data) {
+//       this.userId = data.id
+//       this.name = data.name
+//     },
+    
+//   }
+
+// })
+
 
 // const userInfo = reactive({
 //     token: '',
@@ -8,33 +76,14 @@
 //     myPosts: []
 // }) 
 
+// function getUsers() {
+
+// }
+
 // export function useUser() {
 //     return {
 //         ...toRefs(userInfo)
 //     }
 // }
 
-// import { defineStore } from 'pinia'
-// import axios from "axios"
-// export const useUserStore = defineStore("user", {
-//     state: () => ({
-//         users: [],
-//     }),
-//     getters: {
-//       getUsers(state){
-//           return state.users
-//         }
-//     },
-//     actions: {
-//       async fetchUsers() {
-//         try {
-//           const data = await axios.get('https://jsonplaceholder.typicode.com/users')
-//             this.users = data.data
-//           }
-//           catch (error) {
-//             alert(error)
-//             console.log(error)
-//         }
-//       }
-//     },
-// })
+

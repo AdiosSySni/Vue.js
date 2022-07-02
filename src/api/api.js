@@ -21,11 +21,11 @@ const fetchGetUsers = () => fetch('https://jsonplaceholder.typicode.com/users/')
             addUsers({
                 id: user.id,
                 name: user.name,
-                bio: computed(()=> user.name)
+                // bio: computed(()=> user.name)
             })
         })
     })
-
+    
 const fetchPostUsers = () => fetch('https://jsonplaceholder.typicode.com/users/', {
         method: 'POST',
         body: JSON.stringify({
@@ -50,8 +50,6 @@ const fetchPatchUsers = () => fetch('https://jsonplaceholder.typicode.com/users/
     })
     .then((response) => response.json())
     .then((data) => console.log(data)); 
-    
-
 
 export function userFetch() {
     return {

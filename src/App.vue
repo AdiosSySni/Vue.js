@@ -5,12 +5,14 @@
     import {userFetch} from './api/api'
     const fetch = userFetch();
     fetch.fetchGetUsers()  
-    fetch.fetchPostUsers()
+    // fetch.fetchPostUsers()
+
+
 </script>
 <template>
     <v-header/>
     <div class="wrapper">
-        <main class="main container">
+        <main class="container">
             <router-view/>
         </main>
     </div>
@@ -25,8 +27,4 @@
     margin-top: 20px
     background: $backgroundColor
     flex: 1 1 auto !important
-.main
-    display: grid
-    justify-content: space-between
-    grid-template-columns: 72% 25%
 </style>

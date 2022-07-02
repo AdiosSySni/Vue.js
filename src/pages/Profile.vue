@@ -2,172 +2,176 @@
 
 </script>
 <template>
-    <div class="profile">
-      <div class="profile_info">
-        <div class="info_background">
-          <div class="info_edit_bar">
-            <a href="#"><img src="../assets/images/img_profile/upload.png" alt="upload"></a>
-            <a href="#"><img src="../assets/images/img_profile/edit.png" alt="edit"> EDIT PROFILE</a>
+    <div class="main__wrapper">
+      <div class="profile">
+        <div class="profile_info">
+          <div class="info_background">
+            <div class="info_edit_bar">
+              <a href="#"><img src="../assets/images/img_profile/upload.png" alt="upload"></a>
+              <a href="#"><img src="../assets/images/img_profile/edit.png" alt="edit"> EDIT PROFILE</a>
+            </div>
           </div>
-        </div>
-        <div class="info_context">
-          <div class="info_avatar">
+          <div class="info_context">
+            <div class="info_avatar">
 
-          </div>
-          <div class="info_text">
-            <div class="info_text_header">
-              <div class="info_text_header_left">
-                <h1>Dmitry Kargaev</h1>
-                <a href="#"><img src="../assets/images/img_profile/Logo.png" alt="logo"></a> 
+            </div>
+            <div class="info_text">
+              <div class="info_text_header">
+                <div class="info_text_header_left">
+                  <h1>Dmitry Kargaev</h1>
+                  <a href="#"><img src="../assets/images/img_profile/Logo.png" alt="logo"></a> 
+                </div>
+                <div class="info_text_header_right">
+                  <a href="#"><img src="../assets/images/img_profile/navigation.png" alt="nav"></a>
+                  <p>Saint Petersburg, Russian Federation</p>
+                </div>
               </div>
-              <div class="info_text_header_right">
-                <a href="#"><img src="../assets/images/img_profile/navigation.png" alt="nav"></a>
-                <p>Saint Petersburg, Russian Federation</p>
+              <p>Freelance UX/UI designer, 80+ projects in web design, mobile apps  (iOS & android) and creative projects. Open to offers.</p>
+              <div class="info_buttons">
+                <button>Contact info</button>
+                <button>1,043 connections</button>
               </div>
             </div>
-            <p>Freelance UX/UI designer, 80+ projects in web design, mobile apps  (iOS & android) and creative projects. Open to offers.</p>
-            <div class="info_buttons">
-              <button>Contact info</button>
-              <button>1,043 connections</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="profile_nav">
-        <ul>
-          <li class="activelink">Profile</li>
-          <li>Activity & interests</li>
-          <li>Articles (3)</li>
-        </ul>
-      </div>
-
-      <div class="profile_about">
-          <h1>About</h1>
-          <p>I'm more experienced in eCommerce web projects and mobile banking apps, but also like to work with creative projects, such as landing pages or unusual corporate websites. </p>
-          <a href="#">See more</a>
-      </div>
-
-      <div class="profile_projects">
-        <div class="profile_projects_header">
-          <h1>Projects</h1>
-          <p><a href="#">3</a> of <a href="#">12</a></p>
-        </div>
-        <div class="profile_projects_items">
-          <div class="profile_projects_item">
-            <img src="../assets/images/img_profile/ext.png" alt="ext.png">
-            <h2>Zara redesign concept</h2>
-            <p>UX/UI design, 15.07.2019</p>
-          </div>
-
-           <div class="profile_projects_item">
-            <img src="../assets/images/img_profile/ext.png" alt="ext.png">
-            <h2>Zara redesign concept</h2>
-            <p>UX/UI design, 15.07.2019</p>
-          </div>
-
-           <div class="profile_projects_item">
-            <img src="../assets/images/img_profile/ext.png" alt="ext.png">
-            <h2>Zara redesign concept</h2>
-            <p>UX/UI design, 15.07.2019</p>
-          </div>
-        </div>
-        <a href="#" class="show_all">Show all <p>(12)</p></a> 
-      </div>
-
-      <div class="profile_skills">
-        <h1>Skills & Endoresments</h1>
-        <div class="profile_skills_items">
-          <div class="profile_skills_item">
-            <div class="profile_skills_item_header">
-              <h2>User experience (UX)</h2>
-              <a href="#" id="count">6</a>
-            </div>
-
-            <div class="profile_skills_item_people">
-              
-            </div>
-          </div>
-
-          <div class="profile_skills_item">
-            <div class="profile_skills_item_header">
-              <h2>User experience (UX)</h2>
-              <a href="#" id="count">6</a>
-            </div>
-
-            <div class="profile_skills_item_people">
-              
-            </div>
-          </div>
-
-          <div class="profile_skills_item">
-            <div class="profile_skills_item_header">
-              <h2>User experience (UX)</h2>
-              <a href="#" id="count">6</a>
-            </div>
-
-            <div class="profile_skills_item_people">
-              
-            </div>
-          </div>
-        </div>
-        <a href="#" class="show_all">Show ALL <p>(17)</p></a>
-      </div>
-
-      <div class="profile_experiance">
-        <h1>Experience</h1>
-        <div class="profile_experiance_item">
-          <img src="../assets/images/img_profile/Group.png" alt="img">
-          <div class="profile_experiance_content">
-            <h2>Freelance UX/UI designer</h2>
-            <div class="profile_experiance_description">
-              <p>Self Employed</p>
-              <p>Around the world</p>
-            </div>
-            <div class="profile_experiance_description">
-              <p>Jun 2016 — Present</p>
-              <p>3 yrs 3 mos</p>
-            </div>
-            <p>Work with clients and web studios as freelancer.  Work in next areas: eCommerce web projects; creative landing pages; iOs and Android apps; corporate web sites and corporate identity sometimes.</p>
           </div>
         </div>
 
-        <div class="profile_experiance_item">
-          <img src="../assets/images/img_profile/Group2png.png" alt="img">
-          <div class="profile_experiance_content">
-            <h2>UX/UI designer</h2>
-            <div class="profile_experiance_description">
-              <p>Self Employed</p>
-              <p>Around the world</p>
-            </div>
-            <div class="profile_experiance_description">
-              <p>Jun 2016 — Present</p>
-              <p>3 yrs 3 mos</p>
-            </div>
-            <p>New experience with Upwork system. Work in next areas: UX/UI design, graphic design, interaction design, UX research.</p>
-          </div>
+        <div class="profile_nav">
+          <ul>
+            <li class="activelink">Profile</li>
+            <li>Activity & interests</li>
+            <li>Articles (3)</li>
+          </ul>
         </div>
-      </div>
 
-      <div class="profile_education">
-        <h1>Education</h1>
-        <div class="profile_education_item">
-          <img src="../assets/images/img_profile/Group3.png" alt="img">
-          <div class="profile_education_content">
-            <h2>Moscow State Linguistic University</h2>
-            <p>Bachelor's degree Field Of StudyComputer and Information Systems Security/Information Assurance</p>
-            <p>2013 — 2017</p>
-            <p>Additional English classes and UX profile courses​.</p>
+        <div class="profile_about">
+            <h1>About</h1>
+            <p>I'm more experienced in eCommerce web projects and mobile banking apps, but also like to work with creative projects, such as landing pages or unusual corporate websites. </p>
+            <a href="#">See more</a>
+        </div>
+
+        <div class="profile_projects">
+          <div class="profile_projects_header">
+            <h1>Projects</h1>
+            <p><a href="#">3</a> of <a href="#">12</a></p>
           </div>
-          
+          <div class="profile_projects_items">
+            <div class="profile_projects_item">
+              <img src="../assets/images/img_profile/ext.png" alt="ext.png">
+              <h2>Zara redesign concept</h2>
+              <p>UX/UI design, 15.07.2019</p>
+            </div>
+
+            <div class="profile_projects_item">
+              <img src="../assets/images/img_profile/ext.png" alt="ext.png">
+              <h2>Zara redesign concept</h2>
+              <p>UX/UI design, 15.07.2019</p>
+            </div>
+
+            <div class="profile_projects_item">
+              <img src="../assets/images/img_profile/ext.png" alt="ext.png">
+              <h2>Zara redesign concept</h2>
+              <p>UX/UI design, 15.07.2019</p>
+            </div>
+          </div>
+          <a href="#" class="show_all">Show all <p>(12)</p></a> 
+        </div>
+
+        <div class="profile_skills">
+          <h1>Skills & Endoresments</h1>
+          <div class="profile_skills_items">
+            <div class="profile_skills_item">
+              <div class="profile_skills_item_header">
+                <h2>User experience (UX)</h2>
+                <a href="#" id="count">6</a>
+              </div>
+
+              <div class="profile_skills_item_people">
+                
+              </div>
+            </div>
+
+            <div class="profile_skills_item">
+              <div class="profile_skills_item_header">
+                <h2>User experience (UX)</h2>
+                <a href="#" id="count">6</a>
+              </div>
+
+              <div class="profile_skills_item_people">
+                
+              </div>
+            </div>
+
+            <div class="profile_skills_item">
+              <div class="profile_skills_item_header">
+                <h2>User experience (UX)</h2>
+                <a href="#" id="count">6</a>
+              </div>
+
+              <div class="profile_skills_item_people">
+                
+              </div>
+            </div>
+          </div>
+          <a href="#" class="show_all">Show ALL <p>(17)</p></a>
+        </div>
+
+        <div class="profile_experiance">
+          <h1>Experience</h1>
+          <div class="profile_experiance_item">
+            <img src="../assets/images/img_profile/Group.png" alt="img">
+            <div class="profile_experiance_content">
+              <h2>Freelance UX/UI designer</h2>
+              <div class="profile_experiance_description">
+                <p>Self Employed</p>
+                <p>Around the world</p>
+              </div>
+              <div class="profile_experiance_description">
+                <p>Jun 2016 — Present</p>
+                <p>3 yrs 3 mos</p>
+              </div>
+              <p>Work with clients and web studios as freelancer.  Work in next areas: eCommerce web projects; creative landing pages; iOs and Android apps; corporate web sites and corporate identity sometimes.</p>
+            </div>
+          </div>
+
+          <div class="profile_experiance_item">
+            <img src="../assets/images/img_profile/Group2png.png" alt="img">
+            <div class="profile_experiance_content">
+              <h2>UX/UI designer</h2>
+              <div class="profile_experiance_description">
+                <p>Self Employed</p>
+                <p>Around the world</p>
+              </div>
+              <div class="profile_experiance_description">
+                <p>Jun 2016 — Present</p>
+                <p>3 yrs 3 mos</p>
+              </div>
+              <p>New experience with Upwork system. Work in next areas: UX/UI design, graphic design, interaction design, UX research.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile_education">
+          <h1>Education</h1>
+          <div class="profile_education_item">
+            <img src="../assets/images/img_profile/Group3.png" alt="img">
+            <div class="profile_education_content">
+              <h2>Moscow State Linguistic University</h2>
+              <p>Bachelor's degree Field Of StudyComputer and Information Systems Security/Information Assurance</p>
+              <p>2013 — 2017</p>
+              <p>Additional English classes and UX profile courses​.</p>
+            </div>
+            
+          </div>
         </div>
       </div>
+      <aside class="asideNavRight"></aside>
     </div>
-    <aside class="asideNavRight"></aside>
 </template>
 
-<style lang="sass">
+<style lang="sass" scoped>
 @import '../assets/sass/style'
+.main__wrapper
+  @include asideRight
 @mixin flex_block
   display: flex
   flex-direction: column
@@ -349,7 +353,6 @@ button:hover
     display: flex
     button
       padding: 11px 37px
-
     button:not(:first-child)
       margin-left: 15px
 // навигационный блок страницы профиля
